@@ -1,4 +1,4 @@
-import { Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight, Play } from 'lucide-react'
+import { Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat, Maximize2, Volume, Laptop2, LayoutList, Mic2, Heart, XCircle, PictureInPicture2 } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Home() {
@@ -108,11 +108,95 @@ export default function Home() {
 
           </div>
 
-          <h2 className="font-semibold text-3xl mt-10">Made for Matheus Kaúlly</h2>
+          <h2 className="font-semibold text-2xl mt-10">Jump back in</h2>
+
+          <div className="grid grid-cols-7 gap-4 mt-4">
+
+            <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bog-white/10">
+              <Image src="/vidacara.png" className="w-full" width={200} height={200} alt="Capa do álbum Faith do artista Pop Smoke" />
+              <strong className="font-semibold ">Vida Cara</strong>
+              <span className="text-sm text-zinc-500">Orochi</span>
+            </a>
+
+            <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bog-white/10">
+              <Image src="/vidacara.png" className="w-full" width={200} height={200} alt="Capa do álbum Faith do artista Pop Smoke" />
+              <strong className="font-semibold ">Vida Cara</strong>
+              <span className="text-sm text-zinc-500">Orochi</span>
+            </a>
+
+            <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bog-white/10">
+              <Image src="/vidacara.png" className="w-full" width={200} height={200} alt="Capa do álbum Faith do artista Pop Smoke" />
+              <strong className="font-semibold ">Vida Cara</strong>
+              <span className="text-sm text-zinc-500">Orochi</span>
+            </a>
+
+            <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bog-white/10">
+              <Image src="/vidacara.png" className="w-full" width={200} height={200} alt="Capa do álbum Faith do artista Pop Smoke" />
+              <strong className="font-semibold ">Vida Cara</strong>
+              <span className="text-sm text-zinc-500">Orochi</span>
+            </a>
+
+            <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bog-white/10">
+              <Image src="/vidacara.png" className="w-full" width={200} height={200} alt="Capa do álbum Faith do artista Pop Smoke" />
+              <strong className="font-semibold ">Vida Cara</strong>
+              <span className="text-sm text-zinc-500">Orochi</span>
+            </a>
+
+          </div>
         </main>
       </div>
-      <footer className="bg-zinc-800 border-t border-zinc-700 p-6">
-        footer
+      <footer className="bg-black border-t border-zinc-900 p-4 flex items-center justify-between">
+
+        <div className="flex items-center gap-2">
+          <Image src="/vidacara.png" className="rounded" width={60} height={60} alt="Capa do álbum Vida Cara do artista Orochi" />
+          <div className="flex flex-col">
+            <strong className="font-normal">
+              <a href="" className="hover:underline">Pradaboss</a>
+            </strong>
+            <span className="text-xs text-zinc-400">
+              <a href="" className="hover:underline hover:text-zinc-100">Orochi</a>
+            </span>
+          </div>
+          <div className="flex gap-3 pl-8">
+            <Heart width={18} className="opacity-70 hover:opacity-100" />
+            <XCircle width={18} className="opacity-70 hover:opacity-100" />
+            <PictureInPicture2 width={18} className="opacity-70 hover:opacity-100" />
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center gap-2">
+         <div className="flex items-center gap-6">
+          <Shuffle width={18} className="opacity-40" />
+          <SkipBack width={18} className="fill-white opacity-70 hover:opacity-100" />
+
+          <button className="w-8 h-8 flex items-center justify-center pl-1 rounded-full bg-white text-black hover:scale-110 hover:opacity-95">
+            <Play width={18} fill="bg-black" />
+          </button>
+
+          <SkipForward width={18} className="fill-white opacity-70 hover:opacity-100" />
+          <Repeat width={18} className="opacity-70 hover:opacity-100" /> 
+         </div>
+         <div className="flex items-center gap-2">
+          <span className="text-xs text-zinc-400">0:58</span>
+          <div className="h-1 rounded-full w-96 bg-zinc-600">
+            <div className="bg-zinc-200 rounded-full w-40 h-1"></div>
+          </div>
+          <span className="text-xs text-zinc-400">3:27</span>
+         </div>
+        </div>
+        <div className="flex items-center gap-4">
+          <Mic2 width={18} className="opacity-70 hover:opacity-100" />
+          <LayoutList width={18} className="opacity-70 hover:opacity-100" />
+          <Laptop2 width={18} className="opacity-70 hover:opacity-100" />
+
+          <div className="flex items-center gap-2">
+            <Volume width={18} className="opacity-70 hover:opacity-100" />
+            <div className="h-1 rounded-full w-24 bg-zinc-600">
+              <div className="bg-zinc-200 rounded-full w-10 h-1"></div>
+            </div>
+          </div>
+          <Maximize2 width={18} className="opacity-70 hover:opacity-100" />
+        </div>
       </footer>
     </div>
   )
